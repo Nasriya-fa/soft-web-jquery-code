@@ -1,0 +1,1114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+<style>
+    body{
+        background-image: url('https://st4.depositphotos.com/11351832/30913/v/450/depositphotos_309130864-stock-illustration-high-tech-technology-geometric.jpg');
+    
+
+    }
+#img1{
+    height:300px;
+    width:400px;
+    
+}
+.row{
+    display:flex;
+}
+.column {
+    flex: 1; /* Each div element takes up an equal amount of space */
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin:30px;
+}
+.pg{
+    font-size:20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: bold;
+    text-indent: 40px;
+    color:white;
+    
+    
+
+}
+.pg:hover{
+    background-color:black;
+
+}
+#anim{
+    border-radius: 30px;
+    width:500px;
+    height:400px;
+    background-color: #000d33;
+    border: 5px douple blue;
+   
+}
+button{
+
+            background-color:#4d0000;
+            height:35px;
+            width: 130px;
+            
+            color: aliceblue;
+            border-radius: 30px;
+            border-width: 2px;
+            border-color:white;
+            margin-top: 40px;
+
+        }
+        #box1{
+            background-image: url('https://st2.depositphotos.com/5934840/10879/v/450/depositphotos_108798668-stock-illustration-circuit-board-design-technology-and.jpg');
+            color:white;
+            height:300px;
+            width:400px;
+            float:left;
+            background-color:darkblue;
+            padding: 10px;
+            border: 3px solid white;
+            margin:50px;
+            border-radius: 30px;
+            font-weight: 30px;
+            font-size:20px;
+
+
+
+
+        }
+        #box2{
+            background-image: url('https://st2.depositphotos.com/5934840/10879/v/450/depositphotos_108798668-stock-illustration-circuit-board-design-technology-and.jpg');
+            font-size:20px;
+            color:white;
+
+            font-weight: 30px;
+
+            height:300px;
+            width:400px;
+            float:left;
+            border-radius: 30px;
+            padding: 10px;
+            border: 3px solid white;
+            margin:50px;
+
+
+
+        }
+    .hd{
+        background-color:#330033;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color:aliceblue;
+        padding-left: 10px;
+        text-align: center;
+        border-radius: 30px;
+    }
+    #tab{
+        border:1px solid black;
+        font-family: 'Courier New', Courier, monospace;
+        border-radius: 30px;
+    }
+    .over{
+
+        background-color:crimson;
+    }
+    body{
+        margin-top:70px;
+        border-radius: 20px;
+        
+    }
+    #footer{margin-bottom: 10px;
+        text-align:center;
+
+
+    }
+    #form{
+        background-image: url('https://st2.depositphotos.com/5934840/10879/v/450/depositphotos_108798668-stock-illustration-circuit-board-design-technology-and.jpg');
+
+        color:white;
+        border-radius: 30px;
+        font-weight: bold;
+        padding:50px;
+        border-radius: 20px;
+        font-size: 30px;
+    }
+    #svg{
+        background-color: darkgrey;
+        border-radius: 100px;
+    }
+    #circle{
+        background-image: url('https://st2.depositphotos.com/5934840/10879/v/450/depositphotos_108798668-stock-illustration-circuit-board-design-technology-and.jpg');
+      text-align: center;
+      font-size: 30px;
+      color:white;
+        border-radius: 30px;
+        background-color: darksalmon;
+        content: center;
+        padding-left: 100px;
+        padding-top: 100px;
+        margin-bottom: 30px;
+        height: 500px;
+        width: 1400px;
+        border: 1px solid #ccc;
+        margin-left: -180px;
+        border-radius: 200px;
+        
+
+
+    }
+    #div_n{
+        height:200px;
+        width:200px;
+        margin-left: 50px;
+        padding: 50px;
+        background-color:#001a33;
+        font-style: italic;
+        color:aliceblue;
+        border-radius: 30px;
+        margin:35px;
+        margin-top: 80px;
+
+        
+       
+
+    }
+    #div_m{
+        height:200px;
+        width:200px;
+        margin-left: 50px;
+        padding: 50px;
+        background-color:#001a33;
+        font-style: italic;
+        color:aliceblue;
+        border-radius: 30px;
+        margin:35px;
+        margin-top: 80px;
+
+
+    }
+    #div_l{
+        height:200px;
+        width:200px;
+        margin-left: 50px;
+        padding: 50px;
+        background-color:#001a33;
+        font-style: italic;
+        color:aliceblue;
+        border-radius: 30px;
+        margin:35px;
+        margin-top: 80px;
+ 
+    }
+    #div_ani{
+        background-image: url('https://th.bing.com/th/id/OIP.3JTUiqwQfK7Hwqp4wM0LQAAAAA?pid=ImgDet&w=400&h=400&rs=1');
+        
+        height:400px;
+        width:400px;
+        margin-left: 50px;
+        padding: 50px;
+        background-color:#4d004d;
+        font-style: italic;
+        color:black;
+        border-radius: 10px;
+        margin:20px;
+        margin-top: 80px;
+ 
+
+    }
+    #t-1{
+        
+        
+        background-image: url('https://st2.depositphotos.com/5934840/10879/v/450/depositphotos_108798668-stock-illustration-circuit-board-design-technology-and.jpg');
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size:20px;
+        padding: 30px;
+
+    }
+    #thor{
+        background-image: url('https://st2.depositphotos.com/5934840/10879/v/450/depositphotos_108798668-stock-illustration-circuit-board-design-technology-and.jpg');
+        width:3000px;
+        height:400px;
+        color:white;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 40px;
+    }
+    #div_c{
+        height:200px;
+        max-width:max-content;
+     margin-left: 90px;
+        padding: 50px;
+        background-color:#001a33;
+        font-style: italic;
+        color:aliceblue;
+        border-radius: 30px;
+        margin:50px;
+        margin-top: 80px;
+
+    }
+    #div_fo{
+        height:200px;
+        max-width:max-content;
+    
+        padding: 50px;
+        background-color:#001a33;
+        font-style: italic;
+        color:aliceblue;
+        border-radius: 30px;
+        margin:50px;
+        margin-top: 80px;
+
+    }
+    #div_g{
+        height:100px;
+        max-width:max-content;
+        width:700px;
+        padding: 20px;
+        background-color:#001a33;
+        font-style: italic;
+        color:aliceblue;
+        border-radius: 30px;
+        margin:50px;
+        margin-top: 80px;
+        text-align: center;
+        margin-left: 300px;
+
+    }
+    #div_s{
+        height: 350px;
+        max-width:fit-content;
+        
+        padding: 40px;
+        background-color:#001a33;
+        font-style: italic;
+        color:aliceblue;
+        border-radius: 30px;
+        margin:50px;
+        margin-top: 80px;
+        text-align: center;
+        margin-left: 300px;
+
+    }
+    #div_a{
+        height: 350px;
+        max-width:fit-content;
+        
+        padding: 40px;
+        background-color:#001a33;
+        font-style: italic;
+        color:aliceblue;
+        border-radius: 30px;
+        margin:50px;
+        margin-top: 80px;
+        text-align: center;
+        margin-left: 300px;
+
+
+    }
+    #btn6{
+        margin-left: 500px;
+
+    }
+    #btn7{
+        margin-left: 600px;
+    }
+    .carousel-item img{
+    width:90%;
+    height:70vh;
+    padding-left: 150px;
+    padding-right: 150px;
+    
+}
+    #btn5{
+        text-align: center;
+        margin-left: 600px;
+        
+    }
+    #btn8,#btn9,#btn10,#btn11,#btn12,#btn13,#btn14,#btn15{
+        margin-left: 500px;
+
+    }
+    #sample{
+        color:#ccc;
+        font-size: 20px;
+        font-display: center;
+        font-stretch: extra-expanded;
+        font-style: italic;
+    }
+
+ #div_creat{
+    height: 200px;
+        max-width:fit-content;
+        text-align: center;
+        padding: 40px;
+        background-color:#001a33;
+        font-style: italic;
+        color:white;
+        border-radius: 30px;
+        margin:50px;
+        margin-top: 80px;
+        text-align: center;
+        margin-left: 250px;
+
+
+
+    }
+    a{
+        text-decoration: none;
+
+    }
+    a:hover{
+        color:red;
+    }
+    a.active{
+        color:orange;
+    }
+    #gallery7{
+        background-color: white;
+        padding: 30px;
+        margin: 50px;
+        width:1300px;
+        height:800px;
+        margin-left: -90px;
+    }
+    nav{
+        font-family:'montserrat';
+        background:#0082e6;
+        height:70px;
+        width:100%;
+
+        
+    }
+    label.logo{
+        color:white;
+        font-size:35px;
+        line-height:80px;
+        padding:0 100px;
+        font-weight:bold;
+
+
+    }
+    nav ul{
+        float:right;
+        margin-right: 20px;
+    }
+    .lis{
+        display:inline-block;
+        line-height:80px;
+        margin:0 5px;
+    }
+    a{
+        color:white;
+        font-size: 17px;
+        padding: 7px 13px;
+        text-transform: uppercase;
+        border-radius: 3px;
+
+    }
+    a.active,a:hover{
+        background-color: #1b9bff;
+        transition:.5s
+
+    }
+    #checkbtn{
+        font-size: 30px;
+        color:white;
+        float: right;
+        line-height:70px;
+        margin-right:40px;
+        cursor:pointer;
+        font-display: none;
+    }
+    #check{
+        display: none;
+
+    }
+   
+
+    
+   
+       nav ul li{
+        display:block;
+       
+       }
+       nav ul li a{
+        font-size:20px;
+       }
+       a:hover,a.active{
+        background:none;
+        color:#0082e6;
+       }
+    
+
+    
+    .sys{
+        width: 20px;
+        height: 50px;
+
+    }
+    </style>
+</head>
+<body>
+    <marquee><h1 style="color: #1b9bff; text-align:center; font-size:60px;  font-style:italic;margin-bottom:20px;background-color: #ccc;"> KHAN COMPUTER INFO</h1></marquee>
+   <nav>
+    <input type="checkbox" id="check">
+   
+        <label for="check" id="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+    <label class="logo">DesignX</label>
+    <ul style=" float:right;margin-right: 20px;">
+        <li class="lis"><a class="active" href="#">Home</a></li>
+        <li class="lis"><a  href="#">About</a></li>
+        <li class="lis" ><a href="#">Service</a></li>
+        <li class="lis" ><a href="#">Contect</a></li>
+        <li class="lis" ><a href="#">Feedback</a></li>
+    </ul>
+   </nav>
+  
+
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators"> 
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+      <img  class="d-block w-100" src="https://blog.writers.work/wp-content/uploads/2018/11/desktopwithlaptop.jpg" alt="Trees">
+      <div class="carousel-caption d-none d-md-block">
+      <h5>Nature</h5>
+      <p>Thisplace is very cool.</p>
+    </div>
+      </div>
+      <div class="carousel-item">
+        <img  class="d-block w-100" src="https://i.pinimg.com/originals/7c/0b/5f/7c0b5fb937a4e81c4f7dc66554b006d1.jpg" alt="Montain">
+        <div class="carousel-caption d-none d-md-block">
+      <h5>Tree with mountain</h5>
+      <p>This place is very precious.</p>
+    </div>
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="https://blog.writers.work/wp-content/uploads/2018/11/desktopwithlaptop.jpg" alt="nature">
+        <div class="carousel-caption d-none d-md-block">
+      <h5>Stone with lake</h5>
+      <p>This place is stuning.</p>
+    </div>
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="https://i.redd.it/azjwheahzs101.jpg" alt="nature">
+        <div class="carousel-caption d-none d-md-block">
+        <h5>Stone Sea</h5>
+        <p>This place is awsome.</p>
+    </div>
+      </div>
+        <div class="carousel-item">
+        <img class="d-block w-100" src="https://i.redd.it/0xgl3td2fu061.jpg" alt="nature">
+        <div class="carousel-caption d-none d-md-block">
+      <h5>Stachu with drizzle.</h5>
+      <p>This place is Artificial.</p>
+    </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+
+<div class="container">
+<div class="row">
+   <div class="column" id="anim" style="border:5px double blue;text-indent:25px;"> 
+
+    <img id="img1" src="https://th.bing.com/th/id/R.353f1479192a699912ed91e8d9940535?rik=uBaU0TVJclAT%2bg&riu=http%3a%2f%2fpluspng.com%2fimg-png%2flaptop-hd-png-acer-aspire-e1-530-laptop-intel-pentium-2217u-processor-15-6-hd-1178.png&ehk=D8TWz0V4xUmUOr1iBSvZvuRx8M1KYwbPXByNyOVpcqE%3d&risl=&pid=ImgRaw&r=0">
+</div>
+    <div class="column" id="h" style="background-color:#000d33;color:#ccc;text-indent:25px; border-radius: 20px;border:5px double blue;">
+    <p id="para" class="pg">Support for one of the most popular new programming languages is now shipped by default. Utilize all of the smart syntax-based features of Sublime Text within the modern JavaScript ecosystem.</p>
+    <button id="btn1">click here</button>
+    <p class="pg">The auto complete engine has been rewritten to provide smart completions based on existing code in a project. Suggestions are also augmented with info about their kind, and provide links to definitions.</p>
+    <a href="#" tittle="link1">www.electricrmd.com</a><br>
+    <a href="#" tittle="link1">www.destoprmd.com</a>
+
+</div>
+</div>
+
+
+
+<button id="btn6">Change</button>
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" id="div_c"  >
+    <h2><b>C</b>all <b>B</b>ack <b>F</b>unction</h2>
+    <p>The syntax highlighting engine has been significantly improved.</p>
+
+</div>
+
+<div class="container">
+    <div class="column">
+       
+      <button id="btn16">Low prize</button>
+      
+      <div id="sample" >
+          <p>The computers in the past did not have very fast speed. But nowadaysthis rate is less than Rs.80,000/-only.</p>
+          <p>The modern computer works on the basis of electricity only and most of its parts are electronic devices. This rate is less then Rs.90,000/-only</p>
+          <p>Word length or word size refers to the number of bits that the CPU can process in parallel at one time. This rate is less then Rs.70,000/-only</p>
+
+          <p>In this article we will discuss about the advantages and disadvantages of third generation computer. This rate is less then Rs.60,000/-only</p>
+          <p>There are different computers on the basis of size. There are other types of computers as well but for size-based. This rate is less then Rs.40,000/-only</p>
+      </div><br>
+
+
+</div>
+<div class="row">
+<div id="box1" style="background-color:#000d33;">
+    <h1 class="hd">MULTI-LINE</h1>
+    <p class="pg">The syntax highlighting engine has been significantly improved, with new features like handling non-deterministic grammars, multi-line constructs.</p>
+   
+</div>
+<div id="box2">
+    <h1 class="hd">ECOSYSTEM</h1>
+    <p class="pg">Support for one of the most popular new programming languages is now shipped by default. Utilize all of the smart syntax-based features of Sublime Text within the modern JavaScript ecosystem.</p>
+
+</div>
+<button id="btn2">click Box 1</button>
+<button id="btn3">click Box 2</button>
+</div>
+<div style="border-radius: 10px;" id="t-1">
+    <h1 class="hd">THIS IS THE TABLE</h1>
+    
+      <br>
+      
+      <input type="text" id="c1">
+      <input type="text" id="c2">
+      <input type="text" id="c3">
+      <button id="addrow">Add</button>
+      <br>
+      <br>
+<table id="tab"style="width:100%">
+    <tr>
+      <th>Company</th>
+      <th>Contact</th>
+      <th>Country</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>Gardege</td>
+        <td>Japan</td>
+        <td><button class="del">Delete</button></td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Maria Anders</td>
+      <td>Germany</td>
+      <td><button class="del">Delete</button></td>
+
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Francisco</td>
+      <td>Mexico</td>
+      <td><button class="del">Delete</button></td>
+
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>Maria Anders</td>
+        <td>Germany</td>
+        <td><button class="del">Delete</button></td>
+
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>Francisco</td>
+        <td>Mexico</td>
+        <td><button class="del">Delete</button></td>
+
+      </tr>     
+  </table>
+  <button id="btn20">Read val</button>
+    <p id="out">Get your value here...!</p>
+  </div>
+
+  <button id="btn5">click here</button> 
+  <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" id="div_ani"  >
+    <h1></h1>
+    <b></b>
+
+</div>
+<!--span jq-->
+<marquee>
+    <div id="thor">
+   <h1  id="hd" style="text-align:center;color:#eee2ee;text-decoration:underline; background-color:#330033; width:2000px;height:60px; text-align: center;">Those models are very smart</h1><hr>
+    <b></b>
+
+    <h2 class="hd">REFRESHED UI</h2>
+    <p class="pg">
+        The Default and Adaptive themes have been refreshed <span>auto dark-mode switching</span> spanThe Adaptive theme on Windows and Linux now features custom title bars.
+    </p>
+    <h2 class="hd">
+        TYPESCRIPT, JSX AND TSX SUPPORT
+    </h2>
+    <p class="pg">
+        Support for one of the most popular new programming languages is now shipped by default. Utilize all of the<span>smart syntax-based features </span>of Sublime Text within the modern JavaScript ecosystem.
+    </p>
+    <h2 class="hd">
+        SUPER POWERED SYNTAX DEFINITIONS
+
+    </h2>
+    <p class="pg">
+        The syntax highlighting engine has been significantly improved, with new features like handling non-deterministic grammars,<span>multi-line constructs,</span>  lazy embeds and syntax inheritance. Memory usage has been reduced, and load times are faster than ever.
+    </p>
+
+</div>
+</marquee>
+<div style="margin:60px;color:white; text-align:center;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+<button id="btn17">Before</button> <br>
+<button id="btn18">After</button> <br>
+<button id="btn19">Remove</button>
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" id="div-i" >
+  <img class="sys" style="width:900px;height:500px;margin:40px;border-radius: 40px;"src="https://www.lbtc.co.uk/wp-content/uploads/2020/01/Benefits-of-Studying-Computer-Information-Systems-Courses-with-LBTC.jpg">
+  
+</div>
+</div>
+<!--span end-->
+<!--form jq-->
+    <div id="form" style="background-color:crimson;">
+    <h2 class="hd">THIS IS A FORM</h2>
+    <form>
+        A Value<input type="text" id="a">
+        B Value<input type="text" id="b">
+        <input type="button" value="calculate" id="btn4" style="background-color:#330033;color:#ccc;">
+
+    </form>
+    <p id="status" style="color:rgb(255, 255, 255)">-</p>
+</div>
+<!--check file-->
+<div class="file" style="color:#ccc; font-size:20px; padding: 20px; background-color: #000d33;border-radius: 20px;">
+    <h1>Check for file extension before uploading</h1>
+    <input type="file" onChange="validata(this.value)">
+
+</div>
+  </div>
+  <button id="btn7">change here</button>
+   <!-- animate css and color -->
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" id="div_fo"  >
+    <h2><b>c</b>haining <b>i</b>n <b>J</b>query</h2>
+    <p>The syntax highlighting engine has been significantly improved.</p>
+
+    
+</div>
+
+<div class="container">
+  <div class="row">
+    <!-- <div> 
+    <button id="btn5">click here to Animate</button>
+    </div> -->
+    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" id="div_n" class="div_m" >
+        <h1>Animate jquery</h1>
+        <b>www.w3 school</b>
+    
+    </div><br>
+    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"id="div_m"  class="div_n">
+        <h1>Animate jquery</h1>
+        <b>www.w3 school</b>
+    
+    </div><br>
+    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"id="div_l" class="div_l">
+        <h1>Animate jquery</h1>
+        <b>www.w3 school</b>
+    
+    </div><br>
+  
+    
+</div> 
+<!--get(html,text,attributes)-->
+<button id="btn8">Get TEXT</button>
+<button id="btn9">Get HTML</button>
+<button id="btn10">Get Attributes</button>
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" id="div_g" style="border:3px solid blue" >
+    <h4><b>G</b>et <b>i</b>n <b>T</b>EXT,<b>H</b>TML,<b>A</b>TTRIBUTES</h4>
+    <p>The syntax highlighting engine has been significantly improved.</p>
+
+    
+</div>
+<!--end get-->
+<div>
+    <i class='fas fa-angle-double-right' style='font-size:36px'></i>
+</div> 
+ 
+<div class="container">
+    <div class="col-lg-12">
+    <div id="circle">
+    <p class="pg">This is example of mouseenter,mouseleave and mouseclick</p>
+    
+  <h1>THE CIRCLE</h1>
+  <svg width="200px" height="200px" id="svg">
+    <circle cx="100" cy="100" r="100" stroke="crimson" stroke-width="9" fill="crimson"/>
+  </svg>
+    
+</div>
+</div>
+<!--set methed in jq-->
+<div class="container">
+    <div class="column">
+        <button id="btn11"> Set</button>
+       
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" id="div_s" style="border:3px solid gray" class="pr">
+    <h4><b>S</b>et <b>i</b>n <b>T</b>EXT,<b>H</b>TML,<b>A</b>TTRIBUTES</h4>
+    <p >The syntax highlighting engine has been significantly improved.</p><u>www.w3school.com</u><br><br>
+    <img id="img_2" src="gallery/12.jpg"height="120px" width="200px" >
+
+   </div> 
+   <marquee><br><br><br><br><br><img src="gallery/10.jpg"><br><h4 style="padding-left:20px;"><h4>Let<span style="color:red ;text-decoration:line-through;">RS.50,000/-</span><span style="color:orange ;">Rs.40,000/-</span> only</h4></marquee>
+   <marquee><img src="gallery/12.jpg"><br><h1>This is smartone.</h1></marquee>
+   <!--creat div-->
+   <button id="btn13">Create</button>
+   <button id="btn14">prepend</button>
+   <button id="btn15">HTML</button>
+   <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" id="div_creat" style="border:3px solid gray" class="pr">
+   <div><p id="p_c1">The purpose of jQuery is to make it much easier to use JavaScript on your website.</p><hr></div>
+   <div><p id="p_c2">jQuery is a lightweight, "write less, do more", JavaScript library.</p><hr></div>
+   <div><p id="p_c3">jQuery also simplifies a lot of the complicated things from JavaScript.</p><hr></div>
+   </div> 
+   <!--creat div end-->
+   
+  
+</div> 
+<button id="btn12">Append</button>
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" id="div_a" style="border:3px solid gray" class="pr">
+ <h4><b>S</b>et <b>i</b>n <b>T</b>EXT,<b>H</b>TML,<b>A</b>TTRIBUTES</h4>
+ <p >The syntax highlighting engine has been significantly improved.</p><u>www.w3school.com</u><br><br>
+ <img id="img_3" src="gallery/15.jpg"height="120px" width="200px" >
+
+</div> 
+
+<marquee>For More images <b><u>www.images.com</u></b></marquee>
+
+ 
+
+<div cass="container" id="gallery7">
+    <div class="row">
+    <div class="col-lg-12" >
+        
+        <h2 class="page-header">JQuery image gallery</h2>
+        <hr>
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <a class="thumbnail" href="#">
+            <img class="img-responsive"src="gallery/82.jpg" alt="">
+        </a>
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <a class="thumbnail" href="#">
+            <img class="img-responsive"src="gallery/82.jpg" alt="">
+        </a>
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <a class="thumbnail" href="#">
+            <img class="img-responsive"src="gallery/9.jpg" alt="">
+        </a>
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <a class="thumbnail" href="#">
+            <img class="img-responsive"src="gallery/10.jpg" alt="">
+        </a>
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <a class="thumbnail" href="#">
+            <img class="img-responsive"src="gallery/17.jpg" alt="">
+        </a>
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <a class="thumbnail" href="#">
+            <img class="img-responsive"src="gallery/13.jpg" alt="">
+        </a>
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <a class="thumbnail" href="#">
+            <img class="img-responsive"src="gallery/14.jpg" alt="">
+        </a>
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <a class="thumbnail" href="#">
+            <img class="img-responsive"src="gallery/15.jpg" alt="">
+        </a>
+    </div>
+</div>
+<div class="modal fade" role="dialog" id="nas">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+         <img src=""id="model-img" height="100%" width="100%">
+            </div>
+
+        </div>
+    </div>
+
+</div>
+<footer>
+    <div class="row" id="footer">
+        <div class="col-lg-12">
+            <p>copyright &copy; nasrinn2808@gmail.com</p>
+
+        </div>
+
+    </div>
+    </footer>
+</div>
+
+<script>
+   /* $(document).ready(function(){
+        $("button").click(function(){
+            var div=$(div);
+            div.animate({height:'400px',
+            opacity:'0.8'},"slow");
+            div.animate({width:'500px',
+            opacity:'0.8'},"slow");
+            div.animate({height:'300px',
+            opacity:'0.8'},"slow");
+            div.animate({height:'400px',
+            opacity:'0.8'},"slow");
+            
+
+        
+            
+
+    
+            
+
+    
+
+
+        });
+
+    });*/
+$(document).ready(function(){
+    $("#btn1").click(function(){
+        if($("#para").is(':visible'))
+      {
+        $("#para").fadeOut(200);
+        $(this).val("Show para");
+        alert("Paragraph showing this page")
+      }
+      else if($("#para").not(':visible'))
+      {
+       $("#para").fadeIn(200);
+       $(this).val("Hide para");
+       alert("Paragraph Hiding this page")
+      }
+    });
+   
+$(".div_n").mouseenter(function(){
+        $(".div_n").css("background-color", "yellow");
+
+   
+//$(#div_n).addClass("#0073e6");
+});
+$("#div_n").mouseover(function(){
+    
+        $("#div_n").css("background-color", "#001a33");
+});
+$('#div_n').mouseenter(function(){
+        $('#div_n').css("background-color","blue");
+    })
+    $("#div_m").mouseover(function(){
+    
+    $("#div_m").css("background-color", "#001a33");
+});
+$('#div_m').mouseenter(function(){
+    $('#div_m').css("background-color","blue");
+})
+$("#div_l").mouseover(function(){
+    
+    $("#div_l").css("background-color", "#001a33");
+});
+$('#div_l').mouseenter(function(){
+    $('#div_l').css("background-color","blue");
+})
+$('#btn5').click(function(){
+
+$('#div_ani').animate({left:'480px',top:'100px'});
+$('#div_ani').animate({height:'100px',width:'600px'});
+$('#div_ani').animate({width:'350px',left:'900px',bottom:'900px'});
+$('#div_ani').animate({left:'500px',top:'-50px',height:'400px'});
+ });
+ 
+      
+    });
+    
+
+$(document).ready(function(){
+    $("#box1").fadeOut("slow");
+
+    
+    $("#btn2").click(function(){
+        $("#box1").fadeIn("slow");
+
+
+    });
+    $("#btn3").click(function(){
+   $("#box2").fadeTo("slow",0.90);
+    });
+    $('svg').mouseenter(function(){
+       $('circle').attr("fill","darkgray");
+    })
+    $('svg').mouseleave(function(){
+        $('circle').attr("fill","pink");
+    })
+    $('svg').mousedown(function(){
+        $('circle').attr("fill","coral");
+
+    })
+    $('#btn6').click(function(){
+
+     $('#div_c').animate({left:'150px',width:'3000px'});
+     $('#div_c').fadeOut(2000,function(){
+        $('#div_c').html("<h2>This is call back function...!</h2>").fadeIn(1000);
+     });
+    
+    
+    });
+   
+});
+$(document).ready(function(){
+    $("td,th").css("padding","20px");
+    $("p span").css("color","coral");
+    $("#tab tr").mouseover(function(){
+
+
+   
+    $(this).addClass("over");
+});
+    $("#tab tr").mouseout(function(){
+   
+    $(this).removeClass("over");
+
+});
+$('#btn7').click(function(){
+$('#div_fo').css({"font-family":"Comic Sans","border":"4px solid red"}).animate({left:'350px'}).animate({top:'90px'}).css({"border":"5px solid blue"});
+     });
+     $('#btn8').click(function(){
+       alert("Text:"+$('#div_g').text());
+     });
+     $('#btn9').click(function(){
+       alert("HTML Tags:"+$('#div_g').html());
+     });
+     $('#btn10').click(function(){
+       alert("Attributes Tags:"+$('#div_g').attr("style"));
+     });
+     $('#btn11').click(function(){
+       $("#img_2").attr("src","gallery/9.jpg");
+       
+     });
+     $('#btn12').click(function(){
+    $('u').append("<h2>This is heading</h2>")
+     });
+     $("#btn13").click(function(){
+     $("#p_c1").append("<i><h4>This is append Text</h4></i>")
+     });
+     $("#btn14").click(function(){
+     $("#p_c2").prepend("<i><h4>This is prepend Text</h4></i>");
+     });
+     $("#btn15").click(function(){
+     $("#p_c3").html("<i><h4>This is HTML Text</h4></i>");
+     });
+     $('#btn16').click(function(){
+   //$('#sample p').css({"background-color":"gray"});
+   //$('#sample p:first').css({"background-color":"gray"});
+   //$('#sample p:even').css({"background-color":"gray"});
+   //$('#sample p:odd').css({"background-color":"gray"});
+   //$('#sample p:gt(1)').css({"background-color":"gray"});
+   $('#sample p:not(p:eq(1))').css({"background-color":"gray"});
+   //$('#sample p:eq(4)').css({"background-color":"gray"});
+  // $('#sample p').css({"background-color":"gray"});
+
+     });
+     $('#btn17').click(function(){
+$('#div-i').before("<h2>This is printed by before() method</h2>");
+     });
+     $('#btn18').click(function(){
+$('#div-i').after("<h2>This is printed by after() method</h2>");
+     });
+$('#btn19').click(function(){
+$('.sys').remove();
+$('#div-i').html("<h2>Yor image is Remove</h2>").fadeIn(slow);
+});
+$('#tab').on('click','.del',function(){
+$(this).closest('tr').remove();
+});
+$('#addrow').on('click',function(){
+    $('#tab').append("<tr><td>"+$("#c1").val()+"</td><td>"+$("#c2").val()+"</td><td>"+$("#c3").val()+"</td><td><button class='del'>Delete</button></td></tr>");
+});
+$('#btn20').on("click",function(){
+    var vals="";
+ $("#tab tr").each(function(){
+vals+=$(this).find("td:eq(0)").text()+"<br>";
+vals+=$(this).find("td:eq(1)").text()+" <br> ";
+vals+=$(this).find("td:eq(2)").text()+" <br> ";
+
+
+ });
+ $("#out").html(vals);
+});
+function validata(file)
+{
+var ext=file.substr(3);
+ alert(ext);
+}
+    //  var Paragraph=$("<p>");
+    //     paragraph.append("<h4>This is heading tag.</h1>")
+    //         $('#p_c1').html(paragraph);
+     });
+
+$(document).ready(function(){
+    $("#btn4").bind('click',add);
+    $("#a").bind("keyup",changeme)
+    .bind("focus",focus_evt)
+    .bind("blur",blur_evt); 
+});
+function focus_evt(){
+
+
+$("#status").html("Your a  inside of Text box");
+}
+function blur_evt(){
+
+ $("#status").html("Your a Typing in B value");
+}
+function changeme(){
+    $("#status").html("Your a Typing in A value");
+}
+function add(){
+    var c=Number($("#a").val())+Number($("#b").val())
+    $("#status").html("Total  :"+c);
+}
+$(window).load(function(){
+$('img.img-responsive').on('click',function(){
+ var src=$(this).attr('src');
+ $("#model-img").attr('src',src);
+ $("#nas").modal('show');
+});
+
+});
+   
+
+
+
+</script>
+
+</body>
+</html>
